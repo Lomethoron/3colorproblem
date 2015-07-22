@@ -3,7 +3,7 @@ import java.io.*;
 public class ThreeColorProblem{
 	public static void main(String args[]){
 		try{
-			Scanner in = new Scanner(new File(args[0]));
+			Scanner in = new Scanner(new File("medium1"));
 			String setupInfo = in.nextLine();
 			String[] setupInfoSplit = setupInfo.split(" ");
 			HashMap<String, Vertex> graph = new HashMap<String,Vertex>();
@@ -16,7 +16,7 @@ public class ThreeColorProblem{
 				}
 				if(!graph.containsKey(newEdgeSplit[1])){
 					Vertex newVertex = new Vertex();
-					graph.put(newEdgeSplit[0],newVertex);
+					graph.put(newEdgeSplit[1],newVertex);
 				}
 				Vertex vertex1 = graph.get(newEdgeSplit[0]);
 				vertex1.giveEdge(newEdgeSplit[1]);
@@ -26,7 +26,7 @@ public class ThreeColorProblem{
 			in.close();
 		}
 		catch(Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 		
 		//generate init pop
@@ -49,4 +49,5 @@ public class ThreeColorProblem{
             entry.getValue().setColor("Red");
       }
    }
+   
 }
