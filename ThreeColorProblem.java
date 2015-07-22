@@ -30,7 +30,7 @@ public class ThreeColorProblem{
 		}
 	}
    
-   public void fillColors(Hashmap<Integer,Vertex> graph)
+   public void fillColors(HashMap<Integer,Vertex> graph)
    {
       for(Map.Entry<Integer, Vertex> entry : graph.entrySet()) 
       {
