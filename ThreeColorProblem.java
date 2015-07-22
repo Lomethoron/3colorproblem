@@ -29,4 +29,19 @@ public class ThreeColorProblem{
 			System.out.println(e);
 		}
 	}
+   
+   public void fillColors(Hashmap<Integer,Vertex> graph)
+   {
+      for(Map.Entry<Integer, Vertex> entry : graph.entrySet()) 
+      {
+         int random = (int)(Math.random()*3);
+         if(random == 0)
+            entry.getValue().setColor("Blue");
+         else if(random == 1)
+            entry.getValue().setColor("Green");
+         else
+            entry.getValue().setColor("Red");
+      }
+   }
+>>>>>>> origin/master
 }
