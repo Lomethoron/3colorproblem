@@ -43,5 +43,4 @@ public class ThreeColorProblem{
             entry.getValue().setColor("Red");
       }
    }
->>>>>>> origin/master
 }
