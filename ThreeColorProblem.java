@@ -28,6 +28,12 @@ public class ThreeColorProblem{
 		catch(Exception e) {
 			System.out.println(e);
 		}
+		
+		//generate init pop
+		//determine fitness
+		//create children based on goodish parents
+		//find child fitness and replace if good enough
+		//repeat
 	}
    
    public void fillColors(HashMap<Integer,Vertex> graph)
